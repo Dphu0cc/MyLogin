@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:alpha="0.4"
+        android:background="@color/my_primary"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_above="@+id/card_view"
+        android:gravity="center"
+        android:padding="40dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:src="@drawable/baseline_location_on_24"
+            android:layout_width="64dp"
+            android:layout_height="64dp"></ImageView>
+        <TextView
+            android:fontFamily="sans-serif-medium"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:text="GO MAP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginBottom="-20dp"
+        app:cardCornerRadius="28dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/card_view">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="28dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textStyle="bold"
+                android:textSize="32sp"
+                android:textColor="@color/my_primary"
+                android:text="Welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <TextView
+                android:alpha="0.7"
+                android:text="Please login with your infomation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="30dp">
+            </View>
+
+            <TextView
+                android:textStyle="bold"
+                android:alpha="0.7"
+                android:text="Email Address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <EditText
+                android:drawableEnd="@drawable/baseline_done1_24"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="20dp">
+            </View>
+
+            <TextView
+                android:textStyle="bold"
+                android:alpha="0.7"
+                android:text="Password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+            </TextView>
+
+            <EditText
+                android:drawableEnd="@drawable/baseline_remove_red_eye_24"
+                android:inputType="textEmailAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"></EditText>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <CheckBox
+                    android:alpha="0.7"
+                    android:layout_centerVertical="true"
+                    android:text="Remember me"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </CheckBox>
+
+                <TextView
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentEnd="true"
+                    android:text="I forget my password"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+            </RelativeLayout>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp">
+            </View>
+
+            <com.google.android.material.button.MaterialButton
+                app:cornerRadius="32dp"
+                android:text="Login"
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+            </com.google.android.material.button.MaterialButton>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"></View>
+
+            <TextView
+                android:alpha="0.7"
+                android:layout_gravity="center"
+                android:text="Or login with"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <View
+                android:layout_width="wrap_content"
+                android:layout_height="10dp"></View>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:background="@drawable/fb"
+                    android:layout_margin="12dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp">
+                </ImageView>
+
+                <ImageView
+                    android:background="@drawable/github"
+                    android:layout_margin="12dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp">
+                </ImageView>
+
+                <ImageView
+                    android:background="@drawable/twitter"
+                    android:layout_margin="12dp"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp">
+                </ImageView>
+            </LinearLayout>
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
